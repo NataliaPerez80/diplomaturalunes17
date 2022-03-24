@@ -1,3 +1,6 @@
 Galletitas
 pan 
 frutas
+hola
+super 
+curso
