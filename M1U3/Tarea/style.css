@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+*{box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {font-family: 'Source Sans Pro', sans-serif;
+font-size: 1.2rem;
+min-height: 100%;
+color: black;
+margin-top: 5%;
+margin-left: 5% ;
+margin-right: 5% ;
+}
+
+.cv-container > * {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0 ,0.75) ;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.header {
+    grid-area: header;
+    background-image: url(img/bg1.png);
+    text-align: center;
+    color: black;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: beige;
+}
+.sidebar { 
+    grid-area: sidebar;
+    background-color: beige;
+}
+
+.main { 
+    grid-area: main;
+    background-color: beige;
+}
+
+.footer {
+    grid-area: footer;
+    background-image: url(img/bg1.png);
+    color: black;
+}
+
+.cv-container {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "sidebar"
+    "main"
+    "footer";
+}
+
+@media (min-width: 600px) {
+    .cv-container {
+        grid-template:
+        "header header" 100px
+        "navbar navbar" auto
+        "sidebar main" auto
+        "footer footer" auto / 
+        200px  auto; 
+    }
+}
+
+@media (min-width: 900px) {
+    .cv-container {
+        grid-template:
+        "header header header" 100px
+        "navbar navbar navbar" 400px
+        "sidebar main main" 400px
+        "footer footer footer" auto / 
+        200px auto   200px; 
+    }
+}
+
+.lista {
+    list-style: none;
+}
+
+
+       
