@@ -1,0 +1,132 @@
+#contenedor-ejemplo1{
+	border: 1px solid #aaa;
+	background-color: #dddddd;
+	margin:5%;
+	width: 185px;
+	height: 185px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+	}
+
+#rojo1{
+	height: 60px;
+	width: 60px;
+	border:1px solid #e56d3e;
+	background-color: #e56d3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#verde1 {
+	height:60px;
+	width:60px;
+	border:1px solid #0af51d;
+	background-color: #0af51d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+
+#azul1{
+	height: 60px;
+	width: 60px;
+	border:1px solid #0c08f7;
+	background-color: #0c08f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#contenedor-ejemplo2{
+	border:1px solid #aaa;
+	background-color: #dddddd;
+	margin:5%;
+	width: 185px;
+	height: 185px;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    
+	}
+
+#rojo2{
+	margin:0;
+	height: 60px;
+	width: 60px;
+	border:1px solid #e56d3e;
+	background-color: #e56d3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#azul2{
+	margin:0;
+	height: 60px;
+	width: 60px;
+	border:1px solid #0c08f7;
+	background-color: #0c08f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#verde2{
+	margin:0;
+	height:60px;
+	width:60px;
+	border:1px solid #0af51d;
+	background-color: #0af51d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor-ejemplo3{
+	border:1px solid #aaa;
+	background-color: #dddddd;
+	margin:0;
+	width: 300px;
+	height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+	}
+
+#rojo3{
+	margin:0;
+	width: 60px;
+	border:1px solid #e56d3e;
+	background-color: #e56d3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#azul3{
+	margin:0;
+	width: 60px;
+	border:1px solid #0c08f7;
+	background-color: #0c08f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#verde3{
+	margin:0;
+	width:60px;
+	border:1px solid #0af51d;
+	background-color: #0af51d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
