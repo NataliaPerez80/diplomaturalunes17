@@ -1,0 +1,33 @@
+body{
+    padding-top: 3%;
+}
+
+/*ejerciio1*/
+#cajaviolet {
+    width: 150px;           
+    height: 150px;          
+    background: violet;        
+    border: 1px solid #000; 
+    margin-top: 2%;
+    cursor: pointer;
+    
+  }
+  #cajayellow {
+    width: 150px;           
+    height: 150px;          
+    background: yellow;        
+    border: 1px solid #000; 
+    margin-top: 2%;
+    cursor: pointer;
+    
+  }
+  #cajaorange {
+    width: 150px;           
+    height: 150px;          
+    background: orangered;        
+    border: 1px solid #000;
+    margin-top: 2%; 
+    cursor: pointer;
+  }
+
+/*fin ejercicio1*/
