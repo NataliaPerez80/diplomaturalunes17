@@ -1,3 +1,4 @@
+import '../styles/components/pages/StaffPage.css'
 const StaffPage = (props) => {
     return (
 

@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import '../styles/components/pages/ServiciosPage.css'
 
 const ServiciosPage = (props) => {
     return (
@@ -52,7 +53,7 @@ const ServiciosPage = (props) => {
               <p>Contenidos digitales estaticos y animados</p>
               <a href="https://wa.me/5491130931301" className="button">Consultar</a>
             </div>
-            <div classname="col">
+            <div className="col">
               <i className="fa-solid fa-server fa-2xl"></i>
               <h1>  Hosting      Web</h1>
               <h2>Alojamiento  web,    mensual o anual </h2>
