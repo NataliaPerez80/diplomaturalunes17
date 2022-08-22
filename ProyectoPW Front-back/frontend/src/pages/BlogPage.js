@@ -1,35 +1,37 @@
+import { useState, useEffect } from "react";
+import axios from "axios";
+import NovedadesItem from "../components/novedades/NovedadesItem";
 
 const BlogPage = (props) => {
-    return (
-        
-        <main className="holder">
-    <h2>Bolg | Noveades</h2>
-    <div class="blog">
-    <h3>Titulo</h3>
-      <h4>Subtitulo</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eaque ut quos pariatur esse asperiores fugit iure veritatis, officiis iste minima placeat omnis! Facere unde cum impedit autem, aliquid sit.</p>
-      
-    </div>
-    <div className="blog">
-    <h3>Titulo</h3>
-      <h4>Subtitulo</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eaque ut quos pariatur esse asperiores fugit iure veritatis, officiis iste minima placeat omnis! Facere unde cum impedit autem, aliquid sit.</p>
-      
-    </div>
-   <div className="blog">
-    <h3>Titulo</h3>
-      <h4>Subtitulo</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eaque ut quos pariatur esse asperiores fugit iure veritatis, officiis iste minima placeat omnis! Facere unde cum impedit autem, aliquid sit.</p>
-      
-    </div>
-    <div className="blog">
-    <h3>Titulo</h3>
-      <h4>Subtitulo</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eaque ut quos pariatur esse asperiores fugit iure veritatis, officiis iste minima placeat omnis! Facere unde cum impedit autem, aliquid sit.</p>
-      
-    </div>
-  </main>
-    );
+  const [loading, setLoading] = useState(false);
+  const [novedades, setNovedades] = useState([]);
 
-}
+  useEffect(() => {
+    const cargarNovedades = async () => {
+      setLoading(true);
+      const response = await axios.get('http://localhost:3000/api/novedades');
+      setNovedades(response.data);
+      setLoading(false);
+    };
+    cargarNovedades();
+  }, []);
+
+  return (
+
+    <main className="holder">
+      <h2>Bolg | Noveades</h2>
+      <div class="blog">
+        {
+          loading ? (
+            <p> Cargando...</p>
+          ) : (
+            novedades.map(item => <NovedadesItem key={item.id}
+              title={item.titulo} subtitle={item.subtitulo}
+              imagen={item.imagen} body={item.cuerpo} />)
+          )
+        }
+      </div>
+    </main>
+  )
+};
 export default BlogPage;
